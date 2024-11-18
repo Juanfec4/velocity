@@ -1,7 +1,12 @@
 # Velocity
 
-A high-performance HTTP router for Go inspired by Express.js with radix tree-based routing, middleware support, and WebSocket capabilities.
-Features
+A high-performance "Express-like" HTTP router for Go with radix trie-based routing, middleware support, and WebSocket capabilities.
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/Juanfec4/velocity.svg)](https://pkg.go.dev/github.com/Juanfec4/velocity)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Juanfec4/velocity)](https://goreportcard.com/report/github.com/Juanfec4/velocity)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+### Features
 
 - Fast radix tree routing
 - Path parameters (/users/:id)
@@ -13,10 +18,6 @@ Features
 - Custom 404 and 405 handlers
 - Built-in middleware suite
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/Juanfec4/velocity.svg)](https://pkg.go.dev/github.com/Juanfec4/velocity)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Juanfec4/velocity)](https://goreportcard.com/report/github.com/Juanfec4/velocity)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 ## Table of Contents
 
 - [Features](#features)
@@ -26,7 +27,6 @@ Features
 - [Built-in Middleware](#built-in-middleware)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
