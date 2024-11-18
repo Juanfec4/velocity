@@ -235,6 +235,11 @@ func (a *App) Listen(port int, cfg ...ServerConfig) error {
 		Handler: a,
 	}
 
+	// chain middlewares for global handlers
+	a.notAllowed = chainMws(a.rootRouter.mws, a.notAllowed)
+	a.notFound = chainMws(a.rootRouter.mws, a.notFound)
+	a.options = chainMws(a.rootRouter.mws, a.options)
+
 	if len(cfg) > 0 {
 		if cfg[0].ReadTimeout > 0 {
 			server.ReadTimeout = cfg[0].ReadTimeout
